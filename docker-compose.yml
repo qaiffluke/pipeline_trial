@@ -6,5 +6,3 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bazel
-    ports:
-      - 9090:9090
