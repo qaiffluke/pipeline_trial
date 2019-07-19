@@ -8,7 +8,7 @@ pipeline
   			steps
   			{
           sh 'ls'
-  				sh 'docker build -f Dockerfile'
+  				sh 'docker build Dockerfile'
   			}
   		}
 	}
