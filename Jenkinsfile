@@ -8,7 +8,7 @@ pipeline
   			steps
   			{
           sh 'ls'
-  				//sh 'docker-compose up --build'
+  				sh 'docker build -f Dockerfile'
   			}
   		}
 	}
