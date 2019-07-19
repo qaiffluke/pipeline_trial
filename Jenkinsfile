@@ -7,7 +7,7 @@ pipeline
   		{
   			steps
   			{
-  				sh 'docker-compose up --build'
+  				sh 'docker build Dockerfile'
   			}
   		}
 	}
