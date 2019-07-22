@@ -1,15 +1,9 @@
 pipeline 
 {
- 	agent 
- 	{
- 		docker
- 		{
- 			image 'openjdk:8'
- 		}
- 	}
+ 	agent any
  	stages 
  	{
-		stage('Prerequisites')
+		stage('Pre-Requisites')
   		{
   			steps
   			{
