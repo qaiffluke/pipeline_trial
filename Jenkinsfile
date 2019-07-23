@@ -7,8 +7,7 @@ pipeline
   		{
   			steps
   			{
-          //sh 'cd pipeline_trial'
-          sh 'docker build - < Dockerfile'
+          		sh 'docker build - < Dockerfile'
   			}
   		}
 	}

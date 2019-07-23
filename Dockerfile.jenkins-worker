@@ -36,5 +36,3 @@ RUN apk update && apk add curl && \
  && echo "$SWARM_MD5  /bin/swarm-client.jar" | md5sum -c -
 
 CMD ["java", "-jar", "/bin/swarm-client.jar", "-master", "http://jenkins:8080"]
-
-#CMD docker build - < Dockerfile
