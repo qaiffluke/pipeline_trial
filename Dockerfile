@@ -22,12 +22,3 @@ RUN git clone https://github.com/bazelbuild/examples/
 RUN cd examples/java-tutorial && \
 	bazel build //:ProjectRunner && \
 	bazel-bin/ProjectRunner 
-
-COPY java-tutorial jenkins-worker:/java-tutorial
-RUN cd examples/java-tutorial && \
-	bazel build //:ProjectRunner && \
-	bazel-bin/ProjectRunner 
-RUN cd examples/java-tutorial && \
-	bazel build //src/main/java/com/example/cmdline:runner && \
-	./bazel-bin/src/main/java/com/example/cmdline/runner && \
-	bazel build //src/main/java/com/example/cmdline:runner_deploy.jar
