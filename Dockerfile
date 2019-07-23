@@ -23,7 +23,7 @@ RUN cd examples/java-tutorial && \
 	bazel build //:ProjectRunner && \
 	bazel-bin/ProjectRunner 
 
-COPY java-tutorial bazel:/java-tutorial
+COPY java-tutorial jenkins-worker:/java-tutorial
 RUN cd examples/java-tutorial && \
 	bazel build //:ProjectRunner && \
 	bazel-bin/ProjectRunner 
