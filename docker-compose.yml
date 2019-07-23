@@ -8,7 +8,6 @@ services:
       ports:
         - '8080:8080'
         - '50000:50000'
-      image: localhost:5000/jenkins
     jenkins-worker:
       build: 
         context: .
@@ -17,7 +16,6 @@ services:
       restart: always
       environment:
         - 'JENKINS_URL=http://jenkins:8080'
-      image: localhost:5000/jenkins-worker
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock  # Expose the docker daemon in the container
         - /home/jenkins:/home/jenkins # Avoid mysql volume mount issue
